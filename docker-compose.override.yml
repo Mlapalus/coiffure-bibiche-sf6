@@ -5,6 +5,11 @@ services:
   database:
     ports:
       - "5432"
+    environment:
+      POSTGRES_DB: coiffure
+      # You should definitely change the password in production
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
 ###< doctrine/doctrine-bundle ###
 
 ###> symfony/mailer ###
