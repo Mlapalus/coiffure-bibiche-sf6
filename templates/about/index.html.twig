@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AboutController!
+{% endblock %}
+{% block body %}
+	<div id='about'>
+		{{ include('about/_breadcrumb.html.twig') }}
+		{{ include('about/_about-us.html.twig') }}
+		{{ include('about/_testimonials.html.twig') }}
+	</div>
+{% endblock %}

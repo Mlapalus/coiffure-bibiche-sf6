@@ -1,0 +1,67 @@
+<div id="preloder">
+	<div class="loader"></div>
+</div>
+
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2">
+				<div class="header__logo">
+					<a href="{{ path('app_home')}}"><img src="img/logo-bibiche.png" alt=""></a>
+				</div>
+			</div>
+			<div class="col-lg-10">
+				<div class="header__nav__option">
+					<nav class="header__nav__menu mobile-menu">
+						<ul>
+							<li>
+								<a href=" {{ path('app_home')}} ">Accueil</a>
+
+							</li>
+							<li>
+								<a href="{{ path('app_about') }}">A Propos</a>
+							</li>
+							<li>
+								<a href="{{ path('app_galery') }}">Gallerie</a>
+
+							</li>
+							<li>
+								<a href="https://lington-beauty.fr" target="_blank">Notre Boutique</a>
+
+							</li>
+							<li>
+								<a href="{{ path('app_services') }}">Nos Services</a>
+
+							</li>
+							<li class="">
+								<a href="{{ path('app_contact') }}">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__nav__social">
+						<a href="https://facebook.com/Bibichecoiffure" target="_blank">
+							<i class="fa fa-facebook"></i>
+						</a>
+
+						<a href="https://instagram.com/bibichecoiffure" target="_blank">
+							<i class="fa fa-instagram"></i>
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mobile-menu-wrap"></div>
+	</div>
+</header>
+
+<script>
+	let items = document.querySelectorAll('.header__nav__menu li');
+for (item of items) {
+item.addEventListener('click', (item) => {
+item.addClass('active')
+
+console.log('toto');
+})
+}
+</script>
